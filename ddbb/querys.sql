@@ -40,3 +40,6 @@ SELECT q.question as pregunta
                 
 DELETE FROM user_progress
          WHERE user_id = 7;
+         
+DELETE FROM users
+         WHERE id = 7;

@@ -1,0 +1,25 @@
+
+#form_container {
+    margin-top: 50px;
+}
+.btn-big {
+    width: 50%;
+    height: 50px;
+    /*padding: 100px;*/
+}
+#main_buttons {
+    margin: 10px;
+}
+#learn {
+    margin: 50px;
+}
+#progress {
+    margin: 50px;
+    display: none;
+}
+.greenValue {
+    background-color: lightgreen;
+}
+.redValue {
+    background-color: lightcoral;
+}

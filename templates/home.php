@@ -29,9 +29,15 @@
   </a>
 </div>
 <div id="main_buttons" class="text-center align-middle">
+<?php if(isset($_SESSION["user"])) { ?>
     <div id="learn" class="p-1">
-        <a href="<?php echo $root ?>quiz/" class="btn btn-danger btn-big" onclick=""><h5>¡Juega ahora!</h5></a>
+        <a href="<?php echo $root ?>quiz/" class="btn btn-danger btn-big" onclick="checkRegister"><h5>¡Juega ahora!</h5></a>
     </div>
+<?php } else { ?>
+    <div id="next" class="p-1">
+        <button class="btn btn-danger btn-big" onclick="checkRegister()"><h5>Inicia sesión</h5></button>
+    </div>
+<?php } ?>
     <div id="progress" class="p-1">
         <a href="<?php echo $root ?>registration/" class="btn btn-danger btn-big" onclick=""><h5>Guarda tu progreso</h5></a>
     </div>

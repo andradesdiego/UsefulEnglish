@@ -91,14 +91,33 @@ function closeGame(){
     $(location).attr("href", "http://localhost/UsefulEnglish/");
   });
 };  
-function nextQuestion(boleano, a_id, q_id){
+function nextQuestion(){
   $.ajax({
     url: "http://localhost/UsefulEnglish/quiz/progress.php",
-    data: { bolean: false, answer_id: a_id, question_id: q_id, answered_q: 1 },
+    data: { bolean: false, answer_id: $(".answer").data("answer-id"), question_id: $(".question").data("question-id"), answered_q: 1 },
     method: "POST"
   }).done(function() {
-  });
   location.reload(true);
-  break;
-return;
+  });
+}
+function checkRegister(){
+  swal("¿Ya tienes una cuenta? Inicia sesión o regístrate", {
+    buttons: {
+      login: "Entra con tu usuario",
+      register: "Crea un cuenta",
+    },
+  })
+  .then((value) => {
+    switch (value) {
+   
+      case "login":
+      $(location).attr("href", "http://localhost/UsefulEnglish/login");
+        break;
+   
+      case "register":
+      $(location).attr("href", "http://localhost/UsefulEnglish/registration");
+        break;
+
+    }
+  });
 }

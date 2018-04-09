@@ -25,7 +25,7 @@ if ($resultado) {
 
         $_SESSION["user"] = $usuario;
         
-        $template_section = "../templates/auth/welcome.php";
+        $template_section = "../templates/home.php";
         
     } else {
         $error = "Error de autentificación";

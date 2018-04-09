@@ -20,7 +20,7 @@ if ($resultado) {
         $resultadoID = mysqli_query($conexion, $sqlUser);
         if($resultadoID){
             $_SESSION["user"] = mysqli_fetch_assoc($resultadoID);
-            $template_section = "../templates/auth/welcome.php";
+            $template_section = "../templates/home.php";
         //$template_seccion = "../templates/auth/registro.php";
         } else {
             alert("Error de registro. Por favor, inténtalo de nuevo");

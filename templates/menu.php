@@ -25,6 +25,7 @@
         <li class="nav-item">
             <a class="nav-link" href="<?php echo $root?>login/"><i class="fas fa-user-circle"></i></a>
         </li>
+        
         <?php } ?>
         
       </ul>

@@ -1,29 +1,36 @@
 <div id="micarrusel" class="carousel slide" data-ride="carousel">
-  <ol class="carousel-indicators">
+  <ol id="indicators" class="carousel-indicators">
     <li data-target="#micarrusel" data-slide-to="0" class="active"></li>
     <li data-target="#micarrusel" data-slide-to="1"></li>
     <li data-target="#micarrusel" data-slide-to="2"></li>
   </ol>
   <div class="carousel-inner">
     <div class="carousel-item active">
-      <img class="d-block w-100" src="https://picsum.photos/1200/400/?gravity=east" alt="First slide">
+      <img class="d-block w-100" src="<?php echo $root ?>/images/sld-1.jpg" alt="First slide">
       <div class="carousel-caption d-none d-md-block">
-        <h2>Prueba</h2>
-        <p>prueba</p>
+        <h1>Aprende Inglés</h1>
+        <h2>"ON THE GO!"</h2>
       </div>
     </div>
     <div class="carousel-item">
-      <img class="d-block w-100" src="https://picsum.photos/1200/400/?gravity=east" alt="Second slide">
+      <img class="d-block w-100" src="<?php echo $root ?>/images/sld-2.jpg" alt="Second slide">
+      <div class="carousel-caption d-none d-md-block">
+        <h1>Learning through quizzes</h1>
+        <h2>¡Divertidísimo!</h2>
+      </div>
     </div>
     <div class="carousel-item">
-      <img class="d-block w-100" src="https://picsum.photos/1200/400/?gravity=east" alt="Third slide">
+      <img class="d-block w-100" src="<?php echo $root ?>/images/sld-3.jpg" alt="Third slide">
+      <div class="carousel-caption d-none d-md-block">
+        <h1>Take advantage while waiting</h1>
+        <h2>Perfecto para aprender mientras esperas</h2>
     </div>
   </div>
-  <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+  <a class="carousel-control-prev" href="" role="button" data-slide="prev">
     <span class="carousel-control-prev-icon" aria-hidden="true"></span>
     <span class="sr-only">Previous</span>
   </a>
-  <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+  <a class="carousel-control-next" href="" role="button" data-slide="next">
     <span class="carousel-control-next-icon" aria-hidden="true"></span>
     <span class="sr-only">Next</span>
   </a>

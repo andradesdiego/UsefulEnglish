@@ -13,7 +13,9 @@
         <div class="text-center respuestas">
                 <?php                   
                 while($answers = mysqli_fetch_assoc($resA)) {  ?> 
-                    <div id="answerID_<?php echo $answers["id"]?>" onclick="correctAnswer(<?php echo $answers["correct"]?>, <?php echo $answers["id"]?>, <?php echo $answers["question_id"]?>)" class="col-sm-12 answer" 
+                    <div id="answerID_<?php echo $answers["id"]?>" 
+                    onclick="correctAnswer(<?php echo $answers["correct"]?>, <?php echo $answers["id"]?>, <?php echo $answers["question_id"]?>)" 
+                    class="col-sm-12 answer" 
                     data-answer-correct="<?php echo $answers["correct"]?>"
                     data-answer-id="<?php echo $answers["id"]?>">
                         <h4><?php echo $answers['answer']?></h4> 

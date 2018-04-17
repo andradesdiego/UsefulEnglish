@@ -1,5 +1,4 @@
-USE	useful_english;
-INSERT INTO questions (question) VALUES 
+INSERT INTO questions (question) VALUES
 	('Ahead of time')
     , ('Be at the end of one`s tether')
     , ('Day in, day out')
@@ -7,9 +6,7 @@ INSERT INTO questions (question) VALUES
     , ('Speaks one mind');
 
 
-LOCK TABLES `answers` WRITE;
-/*!40000 ALTER TABLE `answers` DISABLE KEYS */;
-INSERT INTO `answers` (`answer`, `question_id`, `correct`) VALUES
+INSERT INTO answers (`answer`, `question_id`, `correct`) VALUES
 	('Con anticipación, previamente', 1, true)
     , ('Justo a tiempo', 1, false)
     , ('Ya era hora', 1, false)
@@ -25,16 +22,3 @@ INSERT INTO `answers` (`answer`, `question_id`, `correct`) VALUES
     , ('Dar una opinión', 5, true)
     , ('Hablarle a tu mente', 5, false)
     , ('Decir lo primero que viene a la mente', 5, false);
-/*!40000 ALTER TABLE `answers` ENABLE KEYS */;
-UNLOCK TABLES;
-
-LOCK TABLES `solutions` WRITE;
-/*!40000 ALTER TABLE `solutions` DISABLE KEYS */;
-INSERT INTO `solutions` (`question_id`, `correct_answer_id`,`wrong1_answer_id`,`wrong2_answer_id`) VALUES
-	(1,1,2,3)
-    , (2,4,5,6)
-    , (3,7,8,9)
-    , (4,10,11,12)
-    , (5,13,14,15);
-/*!40000 ALTER TABLE `solutions` ENABLE KEYS */;
-UNLOCK TABLES;
